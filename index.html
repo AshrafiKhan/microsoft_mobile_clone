@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Microsoft – Cloud, Computers, Apps & Gaming</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar flex justify-between items-center p-3">
+        <div class="flex justify-center items-center align-center">
+            <div class="hamburger inline-block cursor-pointer md:hidden ">
+                <div class="line h-0.5 w-5 bg-black my-1"></div>
+                <div class="line h-0.5 w-5 bg-black my-1"></div>
+                <div class="line h-0.5 w-5 bg-black my-1"></div>
+            </div>
+            <div class="search mt-1 mx-3 w-[18px] h-[18px] md:hidden"><img src="search.png" alt=""></div>
+        </div>
+
+        <div class="logo text-center flex md:order-1">
+            <img class="h-[22px] w-[108px]" src="logo.png" alt="">
+            <div class="nav md:mx-12 md:space-x-4 md:flex hidden md:block">
+                <div class="item">Microsoft 365</div>
+                <div class="item">Office</div>
+                <div class="item">Windows</div>
+                <div class="item">Surface</div>
+                <div class="item">Xbox</div>
+                <div class="item">Supports</div>
+            </div>
+        </div>
+        <div class="cart px-3 justify-center items-center flex md:order-3">
+            <div class="search hidden md:block"><img class="w-[20px] h-[20px]" src="search.png" alt=""> </div>
+            <div class="flex px-3 justify-center items-center space-x-8">
+                <img class="w-[20px] h-[20px]" src="cart.png" alt=""> <img class="w-[30px] h-[30px]"
+                    src="acc.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- Slider -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide md:hidden" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class=" carousel-item active">
+                <img src="slider1.jpeg" class=" my-3 inline w-100" alt="...">
+                
+                <h2 class="p-2 mt-2 mx-3 text-3xl font-medium">Microsoft 365</h2>
+                <p class="p-2 mx-3 ">Premium Office apps, extra cloud storage, advanced security, and more – all
+                    in one
+                    convenient subscription</p>
+                <button class="p-2 rounded my-2 mx-6 w-auto bg-blue-700 text-white cursor-pointer">For upto 6
+                    people</button>
+                <span class="p-2 text-blue-700 hover:underline hover:border-dashed hover:border-2 hover:border-blue-700">For 1 person &gt; </span>
+                
+            </div>
+            <div class=" carousel-item">
+                <img src="slider2.jpeg" class=" my-3 inline w-100" alt="...">
+                
+                <span class="px-2 py-1 mx-6 ml-6 text-black bg-amber-400">New</span>
+                <h2 class="p-2 mt-2 mx-3 text-3xl font-medium">Surface Laptop Go 2</h2>
+                <p class="p-2 mx-3 ">A sleek laptop with a 12.4-inch touchscreen, great typing experience and
+                    improved HD camera
+                </p>
+                <button class="p-2 rounded my-2 mx-6 w-auto bg-blue-700 text-white cursor-pointer">Learn
+                    More</button>
+                    </div>
+            
+        </div>
+    </div>
+    
+    <!-- md slider -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide hidden md:block " data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active md:flex md:w-full">
+                <div class="md:justify-center md:items-center md:bg-gray-200 md:w-1/3">
+                <h2 class="p-3 mx-3 mt-2 text-3xl font-medium">Microsoft 365</h2>
+                <p class="p-2 mx-3 ">Premium Office apps, extra cloud storage, advanced security, and more – all
+                    in one
+                    convenient subscription</p>
+                <button class="p-2 rounded my-2 mx-6 w-auto bg-blue-700 text-white cursor-pointer">For upto 6
+                    people</button>
+                <span class="p-2 text-blue-700 hover:underline hover:border-dashed hover:border-2 hover:border-blue-700">For 1 person &gt; </span>
+                </div>                
+                <img src="slider1.jpeg" class="md:w-2/3 md:h-auto" alt="..."> 
+                
+            </div>
+            <div class="carousel-item  md:flex md:w-full">
+                <div class="md:justify-center md:items-center md:bg-gray-200 md:w-1/3">                
+                <span class="px-2 py-1 mx-6 ml-6 text-black bg-amber-400">New</span>
+                <h2 class="p-2 mt-2 mx-3 text-3xl font-medium">Surface Laptop Go 2</h2>
+                <p class="p-2 mx-3 ">A sleek laptop with a 12.4-inch touchscreen, great typing experience and
+                    improved HD camera
+                </p>
+                <button class="p-2 rounded my-2 mx-6 w-auto bg-blue-700 text-white cursor-pointer">Learn
+                    More</button>
+                    </div>
+                  <img src="slider2.jpeg" class="md:w-2/3 md:h-auto" alt="...">
+             </div>
+        </div>
+    </div>
+
+    <!-- Promo -->
+    <div class="promo mt-2 p-3 mx-4 md:flex md:space-x-8 justify-center items-center">
+        <div class="item my-3 flex flex-col justify-center items-center">
+            <img class="my-2 w-[40px] h-[40px]" src="windows.jpeg" alt="">
+            <span class="text-blue-700 underline">Choose your Microsoft 365</span>
+        </div>
+        <div class="item my-3 flex flex-col justify-center items-center">
+            <img class="my-2 w-[40px] h-[40px]" src="surface.jpeg" alt="">
+            <span class="text-blue-700 underline">Explore Surface devices</span>
+        </div>
+        <div class="item my-3 flex flex-col justify-center items-center">
+            <img class="my-2 w-[40px] h-[40px]" src="xbox.jpeg" alt="">
+            <span class="text-blue-700 underline">Buy Xbox games</span>
+        </div>
+        <div class="item my-3 flex flex-col justify-center items-center">
+            <img class="my-2 w-[40px] h-[40px]" src="windows.jpeg" alt="">
+            <span class="text-blue-700 underline">Get Windows 11</span>
+        </div>
+    </div>
+
+    <!-- Features -->
+    <div class="container md:flex md:space-x-3">
+        <div class="item p-1 flex flex-col md:w-1/4">
+            <img class="w-100 my-1" src="game.jpeg" alt="">
+            <h3 class="mx-2 my-1 text-xl font-medium">Get your first three months for ₹50</h3>
+            <p class="m-1">Unlock hundreds of great games and more for just ₹50 when you join Xbox Game Pass Ultimate or
+                PC Game Pass. Offer available to new subscribers only.</p>
+            <span class="text-blue-700 my-1 mx-1 font-medium">Join PC Game Pass &rarr;</span>
+            <span class="text-blue-700 my-1 mx-1 font-medium">Join Game Pass Ultimate &rarr; </span>
+        </div>
+        <div class="item p-1 flex flex-col  md:w-1/4">
+            <img class="w-100 my-1" src="surface4.jpeg" alt="">
+            <h3 class="mx-2 my-1 text-xl font-medium">Surface Laptop 4</h3>
+            <p class="m-1"> Do it all with a perfect balance of sleek, ultra-thin design, multitasking speed and
+                improved performance. </p>
+            <span class="text-blue-700 my-2 mx-1 font-medium">Shop Now &rarr;</span>
+        </div>
+        <div class="item p-1 flex flex-col md:w-1/4">
+            <img class="w-100 my-1" src="surfacep8.jpeg" alt="">
+            <h3 class="mx-2 my-1 text-xl font-medium">Surface Pro 8</h3>
+            <p class="m-1"> Do more with a larger 13-inch touchscreen, faster connections and extra speed. Now available
+                with Windows 11. </p>
+            <span class="text-blue-700 my-2 mx-1 font-medium">Learn More &rarr;</span>
+        </div>
+        <div class="item p-1 flex flex-col md:w-1/4">
+            <img class="w-100 my-1" src="design.jpeg" alt="">
+            <h3 class="mx-2 my-1 text-xl font-medium">Designed for life today – and tomorrow</h3>
+            <p class="m-1"> The next-generation of games. Your goals. Friends and family. Windows 11 was made to bring
+                you closer to everything you love. </p>
+            <span class="text-blue-700 my-2 mx-1 font-medium">See if your PC is ready &rarr;</span>
+        </div>
+    </div>
+
+    <!-- Edge -->
+    <div class="mt-4 mb-4 md:flex-col">
+        <img class="w-100 h-100 md:hidden" src="edge1.jpeg" alt="">
+        <img class="hidden md:inline-block md:w-100 md:p-4 md:mx-4" src="img/edge.jpeg" alt="">
+        <div class=" md:flex-col md:-mt-96 md:bg-slate-50 md:w-1/3 md:mx-12">
+            <h3 class="text-2xl font-medium mt-12 mx-2 ">Microsoft Edge</h3>
+            <p class="my-2 mx-2">World-class performance with more privacy, more productivity and more value while you
+                browse</p>
+            <button class="bg-blue-700 text-white my-2 p-2 mx-2 rounded">Download now </button>
+        </div>
+
+    </div>
+
+    <!-- Business -->
+    <div class="business md:mt-40 md:flex md:px-3">
+        <h3 class="text-2xl mx-2 font-semibold md:hidden">For Business</h3>
+        <div class="p-1 mt-12 md:w-1/4">
+            <img class="my-3 mx-2 w-100 " src="business.jpeg" alt="">
+            <span class="px-2 py-1 mx-2 mt-4 ml-6 text-black bg-amber-400">New</span>
+            <h3 class="text-xl mx-2 font-semibold">Surface Laptop Go 2 for Business</h3>
+            <p class="mx-2 my-1 mb-4 "> A sleek, portable laptop featuring a great typing experience, Windows 11 Pro and
+                professional-grade performance. </p>
+            <span class="text-blue-700 mt-12 mx-2 font-medium">Learn More</span>
+        </div>
+
+        <div class="container mt-12 md:w-1/4">
+            <img class=" w-100" src="ofice.jpeg" alt="">
+            <h2 class="text-2xl mt-8 mx-2 font-semibold">Get Microsoft Teams for Free</h2>
+            <p class="mx-2 mb-4"> Online meetings, chat and shared cloud storage – all in one place. </p>
+            <span class="text-blue-700 mt-12 mx-2 font-medium">Sign up for free</span>
+        </div>
+
+        <div class="container mt-12 md:w-1/4">
+            <img class=" w-100" src="cloud.jpeg" alt="">
+            <h2 class="text-2xl mt-8 mx-2 font-semibold">Welcome to your Windows 365 Cloud PC</h2>
+            <p class="mx-2 mb-4"> Securely stream your Windows experience from the Microsoft cloud to any device. </p>
+            <span class="text-blue-700 mt-12 mx-2 font-medium">Get it today</span>
+        </div>
+
+        <div class="container mt-12 mb-12 md:w-1/4">
+            <img class=" w-100" src="wind11.jpeg" alt="">
+            <h2 class="text-2xl mt-8 mx-2 font-semibold">Windows 11 for business is here</h2>
+            <p class="mx-2 mb-4"> Designed for hybrid work. Powerful for employees. Consistent for IT. Secure for all.
+            </p>
+            <span class="text-blue-700 mt-12 mx-2 font-medium">Learn more</span>
+        </div>
+
+    </div>
+
+    <div class="social flex mx-2 space-x-3">
+        <h2 class=" mx-4 ">Follow Microsoft</h2>
+        <a href="#" class=" fa fa-facebook"></a>
+        <a href="#" class=" fa fa-instagram"></a>
+        <a href="#" class=" fa fa-youtube"></a>
+    </div>
+
+    <button class="md:w-auto md:justify-end md:items-end bg-gray-300 mt-6 mx-3 w-100 p-2 font-medium"> &#8593 Back to top</button>
+    
+    
+    
+    
+    <footer class="bg-gray-200 md:flex w-100 mt-12">
+        <div class="new flex flex-col ">
+            <h5 class="font-medium text-lg mt-4 mx-6 my-2">What's New</h5>
+            <ul class="text-sm mx-6">
+                <li>Microsoft 365</li>
+                <li>Surface Pro X</li>
+                <li>Surface Pro 7</li>
+                <li>Surface Laptop 3</li>
+                <li>Windows 11 apps</li>
+            </ul>
+        </div>
+
+        <div class="new flex flex-col ">
+            <h5 class="font-medium text-lg mt-4 mx-6 my-2">Microsoft Store</h5>
+            <ul class="text-sm mx-6">
+                <li>Account profile</li>
+                <li>Download Center</li>
+                <li>Microsoft Store Support</li>
+                <li>Returns</li>
+                <li>Order tracking</li>
+            </ul>
+        </div>
+
+        <div class="new flex flex-col ">
+            <h5 class="font-medium text-lg mt-4 mx-6 my-2">Education</h5>
+            <ul class="text-sm mx-6">
+                <li>Microsoft in education</li>
+                <li>Devices for education</li>
+                <li>Microsoft Teams for Education</li>
+                <li>Microsoft 365 Education</li>
+                <li>Office Education</li>
+                <li>Educator training and development</li>
+                <li>Deals for students and parents</li>
+                <li>Azure for students</li>
+            </ul>
+        </div>
+
+        <div class="new flex flex-col ">
+            <h5 class="font-medium text-lg mt-4 mx-6 my-2">Business</h5>
+            <ul class="text-sm mx-6">
+                <li>Microsoft Cloud</li>
+                <li>Microsoft Security</li>
+                <li>Azure</li>
+                <li>Dynamics 365</li>
+                <li>Microsoft 365</li>
+                <li>Microsoft Advertising</li>
+                <li>Microsoft Idustry</li>
+                <li>Microsoft Teams</li>
+            </ul>
+        </div>
+        </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>
